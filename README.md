@@ -2,13 +2,13 @@
 
 git clone sbaron81/unifebe
 
-./run.sh
+cd unifebe
 
 docker build -t usuario_github/nome_imagem .
 
-docker run -d -p 5000:5000 -d usuario_github/nome_imagem
+docker run -d -p 8080:80 -d usuario_github/nome_imagem
 
-http://ip_do_linux:5000
+http://ip_do_linux:8080
 
 docker login
 
