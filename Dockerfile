@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 
 # Instala as dependências: nginx, bash, curl (para baixar ícones, se necessário)
 RUN apt-get update && \
-    apt-get install -y nginx curl lsb-release lscpu procps && \
+    apt-get install -y nginx curl lsb-release procps && \
     apt-get clean
 
 # Cria diretório de trabalho
